@@ -6,9 +6,8 @@ interface ResponseError extends Error {
 
 const ErrorHandler: ErrorRequestHandler = (
   err: ResponseError,
-  req: Request,
-  res: Response,
-  next: NextFunction
+  _req: Request,
+  res: Response
 ) => {
   const errStatus = err?.status || 500;
   const errMsg = err.message || "Something went wrong";
