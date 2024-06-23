@@ -66,7 +66,7 @@ const formatTree = (input: InputFormat): OutputFormat => {
   return output;
 };
 
-function buildTree(urls: [{ [key: string]: string }]): TreeNode {
+function buildTree(urls: Array<{ fileUrl: string }>): TreeNode {
   const tree: TreeNode = {};
   urls.forEach(({ fileUrl }) => {
     const { hostname, pathParts } = parseUrl(fileUrl);

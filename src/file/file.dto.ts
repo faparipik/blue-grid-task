@@ -1,5 +1,5 @@
 interface Files {
-  [key: string]: [{}];
+  [key: string]: Array<{ fileUrl: string }>;
 }
 
 export { Files };
