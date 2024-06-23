@@ -1,4 +1,4 @@
-import { ErrorRequestHandler, NextFunction, Request, Response } from "express";
+import { ErrorRequestHandler, Request, Response } from "express";
 
 interface ResponseError extends Error {
   status?: number;
