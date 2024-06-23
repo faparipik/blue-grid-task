@@ -1,8 +1,8 @@
 import { Request, Response } from "express";
 import { fetchFiles } from "../filesServer/filesServer.service";
-import cache from "../cache/cache.service";
+import cache from "../libs/cache/cache.service";
 
-import { FILES_KEY } from "../cache/cache.consts";
+import { FILES_KEY } from "../libs/cache/cache.consts";
 import { formatFileInTreeStructure } from "./file.service";
 import { Files } from "./file.dto";
 
