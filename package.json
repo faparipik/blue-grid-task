@@ -14,5 +14,8 @@
     "file-structure"
   ],
   "author": "Faruk Bruncevic",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.2"
+  }
 }
